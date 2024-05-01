@@ -39,7 +39,7 @@ namespace Move {
 
         Piece(Color color, PieceType piece_type) : color(color), piece_type(piece_type) {}
         static std::vector<Index> generate_legal_moves(Board::Board *board, Index index);
-        
+
     private:
         static std::vector<Index> generate_pawn_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_knight_moves(Board::Board *board, Index index);
@@ -56,6 +56,8 @@ namespace Move {
     enum PieceType {
         Pawn, Knight, Bishop, Rook, Queen, King
     };
+
+    Color swap(Color color);
 }
 
 #endif

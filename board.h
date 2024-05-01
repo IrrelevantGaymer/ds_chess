@@ -1,6 +1,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include <tuple>
 #include <variant>
 
 #include "move.h"
@@ -18,22 +19,22 @@ namespace Board {
         bool is_piece_capturable(Move::Index index, Move::Color capturing_color) const;
         //returns true if a piece doesn't exist at the index OR if one does, that its color is opposite to capturing_color
         bool can_piece_move_to_square(Move::Index index, Move::Color capturing_color) const;
-        
+
         bool is_valid_move(Move::Move move);
         MoveResult make_move(Move::Move move);
         MoveResult unmake_move(Move::Move move);
         std::tuple<size_t, size_t> generate_attacked_spaces();
     };
 
-    typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
-
-    struct SuccessfulOperation;
+    struct SuccessfulOperation {};
 
     enum MoveError {
         InvalidMove,
         IndexOutOfBounds,
         KingLeftInCheck
     };
+
+    typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
 }
 
 #endif
