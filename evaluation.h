@@ -3,6 +3,10 @@
 
 #include "board.h"
 
-float evaluate_board(Board::Board *board);
+namespace Evaluation {
+
+    float evaluate_board(Board::Board *board);
+
+};
 
 #endif

@@ -3,6 +3,10 @@
 
 #include "board.h"
 
-float search(int32_t depth, Board::Board *board);
+namespace Search {
+
+    float search(int32_t depth, Board::Board *board);
+
+};
 
 #endif

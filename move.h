@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <optional>
+#include <string>
 #include <vector>
 
 #include "board.h"
@@ -38,15 +39,23 @@ namespace Move {
         PieceType piece_type;
 
         Piece(Color color, PieceType piece_type) : color(color), piece_type(piece_type) {}
+        std::string to_string() const;
         static std::vector<Index> generate_legal_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_capture_moves(Board::Board *board, Index index);
 
     private:
         static std::vector<Index> generate_pawn_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_pawn_capture_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_knight_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_knight_capture_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_bishop_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_bishop_capture_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_rook_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_rook_capture_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_queen_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_queen_capture_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_king_moves(Board::Board *board, Index index);
+        static std::vector<Index> generate_king_capture_moves(Board::Board *board, Index index);
     };
 
     enum Color {
@@ -58,6 +67,7 @@ namespace Move {
     };
 
     Color swap(Color color);
-}
+    void swap_ptr(Color *color);
+};
 
 #endif

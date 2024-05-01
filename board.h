@@ -1,6 +1,9 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include <array>
+#include <iostream>
+#include <optional>
 #include <tuple>
 #include <variant>
 
@@ -9,7 +12,7 @@
 namespace Board {
     class Board {
     public:
-        std::optional<Move::Piece> board[64];
+        std::array<std::optional<Move::Piece>, 64> board;
         std::optional<size_t> en_passant;
         Move::Color current_player;
 
@@ -19,22 +22,26 @@ namespace Board {
         bool is_piece_capturable(Move::Index index, Move::Color capturing_color) const;
         //returns true if a piece doesn't exist at the index OR if one does, that its color is opposite to capturing_color
         bool can_piece_move_to_square(Move::Index index, Move::Color capturing_color) const;
+        //gets index of the king
+        std::optional<Move::Index> get_king_index(Move::Color color) const;
 
-        bool is_valid_move(Move::Move move);
-        MoveResult make_move(Move::Move move);
-        MoveResult unmake_move(Move::Move move);
-        std::tuple<size_t, size_t> generate_attacked_spaces();
+        MoveResult is_valid_move(Move::Move *move);
+        MoveResult make_move(Move::Move *move);
+        MoveResult unmake_move(Move::Move *move);
+        void print_board() const;
     };
 
     struct SuccessfulOperation {};
 
     enum MoveError {
+        NoPieceToMove,
         InvalidMove,
         IndexOutOfBounds,
-        KingLeftInCheck
+        KingLeftInCheck,
+        NoKing
     };
 
     typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
-}
+};
 
 #endif
