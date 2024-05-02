@@ -39,6 +39,23 @@ std::tuple<size_t, size_t> Move::Move::index_to_coord(Index index) {
     return std::make_tuple(index / 8, index % 8);
 }
 
+Index Move::Move::string_to_index(std::string pos) {
+    if (
+        pos.length() != 2 
+        || !isalpha(tolower(pos[0])) || (tolower(pos[0]) >= 'a' && tolower(pos[0]) <= 'h')
+        || !isdigit(pos[1]) || (pos[1] >= '1' && pos[1] <= '8')
+    ) {
+        throw std::invalid_argument(
+            "expected a string with a file indicated by a letter a-h, then a rank indicated by a number 1-8"
+        );
+    }
+
+    size_t rank, file;
+    rank = pos[1] - '1';
+    file = tolower(pos[0]) - 'a';
+    return Move::coord_to_index(rank, file);
+}
+
 std::vector<Index> Piece::generate_legal_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
         return {};
@@ -868,6 +885,33 @@ std::vector<Index> Move::Piece::generate_king_moves(Board::Board *board, Index i
         moves.push_back(offset);
     }
 
+    Index rook_index = Board::Board::get_default_queenside_rook_for_color(piece.color);
+    if (
+        board->get_queenside_castle_for_color(piece.color) 
+        && board->board[rook_index].has_value() 
+        && board->board[rook_index].value().color == piece.color
+        && board->board[rook_index].value().piece_type == PieceType::Rook
+        && !board->board[rook_index + 1].has_value()
+        && !board->board[rook_index + 2].has_value()
+        && !board->board[rook_index + 3].has_value()
+        //TODO check if traversed square is attacked
+    ) {
+        moves.push_back(Board::Board::get_default_king_for_color(piece.color) - 2);
+    }
+    Index rook_index = Board::Board::get_default_kingside_rook_for_color(piece.color);
+    //castling
+    if (
+        board->get_kingside_castle_for_color(piece.color) 
+        && board->board[rook_index].has_value() 
+        && board->board[rook_index].value().color <= piece.color
+        && board->board[rook_index].value().piece_type == PieceType::Rook
+        && !board->board[rook_index - 1].has_value()
+        && !board->board[rook_index - 2].has_value()
+        //TODO check if traversed square is attacked
+    ) {
+        moves.push_back(Board::Board::get_default_king_for_color(piece.color) + 2);
+    } 
+
     return moves;
 }
 
@@ -935,4 +979,17 @@ void swap_ptr(Color *color) {
             *color = Color::White;
             break;
     }
+}
+
+CastlingRights get_castling_rights(
+    bool can_kingside_castle, bool can_queenside_castle
+) {
+    if (can_kingside_castle && can_queenside_castle) {
+        return CastlingRights::Both;
+    } else if (can_kingside_castle) {
+        return CastlingRights::Kingside;
+    } else if (can_queenside_castle) {
+        return CastlingRights::Queenside;
+    }
+    return CastlingRights::None;
 }

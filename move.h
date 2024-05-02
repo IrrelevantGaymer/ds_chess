@@ -16,12 +16,14 @@ namespace Move {
         Index to;
         std::optional<Piece> capture;
         std::optional<Piece> promotion;
+        CastlingRights lost_castling_rights;
 
         Move(Index from, Index to, std::optional<Piece> capture, std::optional<Piece> promotion) 
             : from(from), to(to), capture(capture), promotion(promotion) {}
         static Index coord_to_index(size_t rank, size_t file);
         //returns tuple of the form (rank, file)
         static std::tuple<size_t, size_t> index_to_coord(Index index);
+        static Index string_to_index(std::string pos);
     };
 
     const int32_t UPPER_LEFT_OFFSET  = 7;
@@ -42,7 +44,6 @@ namespace Move {
         std::string to_string() const;
         static std::vector<Index> generate_legal_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_capture_moves(Board::Board *board, Index index);
-
     private:
         static std::vector<Index> generate_pawn_moves(Board::Board *board, Index index);
         static std::vector<Index> generate_pawn_capture_moves(Board::Board *board, Index index);
@@ -66,8 +67,16 @@ namespace Move {
         Pawn, Knight, Bishop, Rook, Queen, King
     };
 
+    enum CastlingRights {
+        None, Kingside, Queenside, Both
+    };
+
     Color swap(Color color);
     void swap_ptr(Color *color);
+
+    CastlingRights get_castling_rights(
+        bool can_kingside_castle, bool can_queenside_castle
+    );
 };
 
 #endif
