@@ -273,7 +273,7 @@ Board::MoveResult Board::Board::is_valid_move(Move::Move *move) {
     return MoveResult(SuccessfulOperation {});
 }
 
-Board::MoveResult Board::Board::make_move(Move::Move *move) {
+void Board::Board::make_move(Move::Move *move) {
     Move::Piece moving_piece = this->board[move->from].value();
     bool moved_two_squares_forward = (move->from < move->to ? move->to - move->from : move->from - move->to) == 16;
     bool was_piece_pawn = moving_piece.piece_type == Move::PieceType::Pawn;
@@ -365,16 +365,50 @@ Board::MoveResult Board::Board::make_move(Move::Move *move) {
         this->num_moves += 1;
     }
     Move::swap_ptr(&this->current_player);
-
-    return MoveResult(SuccessfulOperation());
 }
 
-Board::MoveResult Board::Board::unmake_move(Move::Move *move) {
+void Board::Board::unmake_move(Move::Move *move) {
+    Move::Piece moving_piece = this->board[move->from].value();
+    
     this->board[move->to] = move->capture;
     this->board[move->from] = this->board[move->to];
     this->current_player = Move::swap(this->current_player);
 
-    //TODO handle castling rights and undoing castling
+    //handling undoing castling
+    if (moving_piece.piece_type == Move::PieceType::King && move->from == Board::get_default_king_for_color(moving_piece.color)) {
+        if (move->to - move->from == 2) {
+            this->board[Board::get_default_kingside_rook_for_color(moving_piece.color)] = {
+                Move::Piece(moving_piece.color, Move::PieceType::Rook)
+            };
+            this->board[Board::get_default_king_for_color(moving_piece.color) + 1] = std::nullopt;
+        } else if (move->from - move->to == 2) {
+            this->board[Board::get_default_queenside_rook_for_color(moving_piece.color)] = {
+                Move::Piece(moving_piece.color, Move::PieceType::Rook)
+            };
+            this->board[Board::get_default_king_for_color(moving_piece.color) - 1] = std::nullopt;
+        }
+    }
+
+    //handling regenerating castling rights
+    if (moving_piece.color == Move::Color::White) {
+        if (move->lost_castling_rights == Move::CastlingRights::Both) {
+            this->can_white_queenside_castle = true;
+            this->can_white_kingside_castle = true;
+        } else if (move->lost_castling_rights == Move::CastlingRights::Queenside) {
+            this->can_white_queenside_castle = true;
+        } else if (move->lost_castling_rights == Move::CastlingRights::Kingside) {
+            this->can_white_kingside_castle = true;
+        }
+    } else {
+        if (move->lost_castling_rights == Move::CastlingRights::Both) {
+            this->can_black_queenside_castle = true;
+            this->can_black_kingside_castle = true;
+        } else if (move->lost_castling_rights == Move::CastlingRights::Queenside) {
+            this->can_black_queenside_castle = true;
+        } else if (move->lost_castling_rights == Move::CastlingRights::Kingside) {
+            this->can_black_kingside_castle = true;
+        }
+    }
 }
 
 void Board::Board::print_board() const {

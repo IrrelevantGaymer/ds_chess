@@ -44,9 +44,10 @@ namespace Board {
         static Move::Index get_default_king_for_color(Move::Color color);
         static Move::Index get_default_kingside_rook_for_color(Move::Color color);
 
+        //is valid move is not const because it uses make move to check for attacks on king
         MoveResult is_valid_move(Move::Move *move);
-        MoveResult make_move(Move::Move *move);
-        MoveResult unmake_move(Move::Move *move);
+        void make_move(Move::Move *move);
+        void unmake_move(Move::Move *move);
         void print_board() const;
     };
 
