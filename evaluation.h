@@ -6,7 +6,7 @@
 namespace Evaluation {
 
     float evaluate_board(Board::Board *board);
-
+    float get_piece_value(Move::Piece piece);
 };
 
 #endif
