@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/river/Desktop/Projects/chess_ds/build",
+  "command": "/usr/bin/g++ -I/home/river/Desktop/Projects/chess_ds/include -g -o CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o -c /home/river/Desktop/Projects/chess_ds/ds_chess/main.cpp",
+  "file": "/home/river/Desktop/Projects/chess_ds/ds_chess/main.cpp",
+  "output": "CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o"
+}
+]

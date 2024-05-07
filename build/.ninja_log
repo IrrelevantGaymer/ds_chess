@@ -1,0 +1,5 @@
+# ninja log v5
+1	1862	1715113947202813035	CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o	7978a87af232ed23
+0	156	1715114079321531300	CMakeFiles/hello_world.dir/ds_chess/main.cpp.o	8856eaa0eb695c91
+1866	2280	1715113947618789272	ds_chess	72ee482789b35183
+156	198	1715114079361530283	hello_world	e534fa5c53c22d9c

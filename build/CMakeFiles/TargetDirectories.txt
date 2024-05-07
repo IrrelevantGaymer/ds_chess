@@ -1,0 +1,5 @@
+/home/river/Desktop/Projects/chess_ds/build/CMakeFiles/ds_chess.dir
+/home/river/Desktop/Projects/chess_ds/build/CMakeFiles/package.dir
+/home/river/Desktop/Projects/chess_ds/build/CMakeFiles/package_source.dir
+/home/river/Desktop/Projects/chess_ds/build/CMakeFiles/edit_cache.dir
+/home/river/Desktop/Projects/chess_ds/build/CMakeFiles/rebuild_cache.dir
