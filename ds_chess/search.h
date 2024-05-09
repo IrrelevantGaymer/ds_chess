@@ -7,7 +7,7 @@ namespace Search {
 
     float search(int32_t depth, Board::Board *board);
 
-    void init search(int32_t depth, Board::Board *board);
+    void init_search(int32_t depth, Board::Board *board);
 
 };
 

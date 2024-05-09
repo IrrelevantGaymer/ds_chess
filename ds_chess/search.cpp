@@ -1,6 +1,7 @@
 
 #include "search.h"
 #include <iostream>
+#include <limits>
 #include <vector>
 #include <string>
 #include "move_generator.h"
@@ -34,11 +35,11 @@ float search(int32_t depth, Board::Board* board) {
 	use move generator to move
 	*/
 	vector<Move::Move> moves = MoveGenerator::generate_moves(board);
-	float bestEval = -numeric_limits::infinity();
-	for (Move move : moves) {
-		board->make_move(move);
+	float bestEval = -std::numeric_limits<float>::infinity();
+	for (Move::Move move : moves) {
+		board->make_move(&move);
 		float eval = -search(depth - 1, board);
-		board.unmake_move(move);
+		board->unmake_move(&move);
 		if (eval > bestEval){
 			bestEval = eval;
 		}
@@ -46,9 +47,9 @@ float search(int32_t depth, Board::Board* board) {
 }
 
 
-void init search(int32_t depth, Board::Board* board) {
+void init_search(int32_t depth, Board::Board* board) {
 
-	std::optional<Move::move> best_move = std::nullopt;
+	std::optional<Move::Move> best_move = std::nullopt;
 	/*
 	recursive searching
 	best_move
@@ -57,14 +58,16 @@ void init search(int32_t depth, Board::Board* board) {
 	recursive searching
 	*/
 	vector<Move::Move> moves = MoveGenerator::generate_moves(board);
-	float bestEval = -numeric_limits::infinity();
-	for (Move move : moves) {
-		board->make_move(move);
+	float bestEval = -std::numeric_limits<float>::infinity();
+	for (Move::Move move : moves) {
+		board->make_move(&move);
 		float eval = -search(depth - 1, board);
-		board.unmake_move(move);
+		board->unmake_move(&move);
 		if (eval > bestEval) {
-			bestEval = move;
+			bestEval = eval;
+			best_move = move;
 		}
 	}
 	
+	//print best move
 }
