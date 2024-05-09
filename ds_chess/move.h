@@ -24,6 +24,7 @@ namespace Move {
         //returns tuple of the form (rank, file)
         static std::tuple<size_t, size_t> index_to_coord(Index index);
         static Index string_to_index(std::string pos);
+        static Move string_to_move(std::string move);
     };
 
     const int32_t UPPER_LEFT_OFFSET  = 7;

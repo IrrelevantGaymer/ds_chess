@@ -56,11 +56,25 @@ Index Move::Move::string_to_index(std::string pos) {
     return Move::coord_to_index(rank, file);
 }
 
+Move::Move Move::Move::string_to_move(std::string move) {
+    if (move.length() != 4) {
+        throw std::invalid_argument(
+            "expected a string such as e2e4"
+        );
+    }
+
+    return Move(
+        Move::Move::string_to_index(move.substr(0, 2)), 
+        Move::Move::string_to_index(move.substr(2, 2)),
+        std::nullopt, std::nullopt
+    );
+}
+
 std::vector<Index> Piece::generate_legal_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return {};
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
 
     switch (piece.piece_type) {
@@ -91,9 +105,9 @@ std::vector<Index> Piece::generate_legal_moves(Board::Board *board, Index index)
 
 std::vector<Index> Move::Piece::generate_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return {};
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
 
     switch (piece.piece_type) {
@@ -121,9 +135,9 @@ std::vector<Index> Move::Piece::generate_capture_moves(Board::Board *board, Inde
 
 std::vector<Index> Move::Piece::generate_pawn_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return {};
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     bool is_piece_white = piece.color == Color::White;
     int32_t dir = is_piece_white ? UP_OFFSET : DOWN_OFFSET;
@@ -160,9 +174,9 @@ std::vector<Index> Move::Piece::generate_pawn_moves(Board::Board *board, Index i
 
 std::vector<Index> Move::Piece::generate_pawn_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return {};
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     bool is_piece_white = piece.color == Color::White;
     int32_t dir = is_piece_white ? UP_OFFSET : DOWN_OFFSET;
@@ -184,9 +198,9 @@ std::vector<Index> Move::Piece::generate_pawn_capture_moves(Board::Board *board,
 
 std::vector<Index> Move::Piece::generate_knight_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     bool is_piece_white = piece.color == Color::White;
     int32_t dir = is_piece_white ? UP_OFFSET : DOWN_OFFSET;
@@ -232,9 +246,9 @@ std::vector<Index> Move::Piece::generate_knight_moves(Board::Board *board, Index
 
 std::vector<Index> Move::Piece::generate_knight_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     bool is_piece_white = piece.color == Color::White;
     int32_t dir = is_piece_white ? UP_OFFSET : DOWN_OFFSET;
@@ -280,9 +294,9 @@ std::vector<Index> Move::Piece::generate_knight_capture_moves(Board::Board *boar
 
 std::vector<Index> Move::Piece::generate_bishop_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -354,9 +368,9 @@ std::vector<Index> Move::Piece::generate_bishop_moves(Board::Board *board, Index
 
 std::vector<Index> Move::Piece::generate_bishop_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -428,9 +442,9 @@ std::vector<Index> Move::Piece::generate_bishop_capture_moves(Board::Board *boar
 
 std::vector<Index> Move::Piece::generate_rook_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -502,9 +516,9 @@ std::vector<Index> Move::Piece::generate_rook_moves(Board::Board *board, Index i
 
 std::vector<Index> Move::Piece::generate_rook_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -576,9 +590,9 @@ std::vector<Index> Move::Piece::generate_rook_capture_moves(Board::Board *board,
 
 std::vector<Index> Move::Piece::generate_queen_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -710,9 +724,9 @@ std::vector<Index> Move::Piece::generate_queen_moves(Board::Board *board, Index 
 
 std::vector<Index> Move::Piece::generate_queen_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -844,9 +858,9 @@ std::vector<Index> Move::Piece::generate_queen_capture_moves(Board::Board *board
 
 std::vector<Index> Move::Piece::generate_king_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;
@@ -917,9 +931,9 @@ std::vector<Index> Move::Piece::generate_king_moves(Board::Board *board, Index i
 
 std::vector<Index> Move::Piece::generate_king_capture_moves(Board::Board *board, Index index) {
     if (!board->board[index].has_value()) {
-        return;
+        return std::vector<Index>();
     }
-    std::vector<Index> moves = {};
+    std::vector<Index> moves = std::vector<Index>();
     Piece piece = board->board[index].value();
     
     size_t rank, file;

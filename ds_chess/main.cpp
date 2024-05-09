@@ -2,8 +2,10 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <optional>
 #include "SFML/Graphics.hpp"
 #include "board.h"
+#include "move.h"
 
 
 #define Length 7
@@ -265,10 +267,11 @@ int gui_main()
 int tui_main() {
 
 
-    Board::Board chessboard;
+    std::optional<Board::Board> chessboard;
 
     while (true) {
-        string input = getline(cin);
+        string input;
+        getline(cin, input);
         vector <string> args = split(input, ' ');
 
         if (args[0] == "uci") {
@@ -290,14 +293,21 @@ int tui_main() {
             else if (args[i] == "fen") {
                 //create a board using args[2]
                 string fen = args[2] + " " + args[3] + " " + args[4] + " " + args[5] + " " + args[6] + " " + args[7];
-                chessboard = Board(fen);
+                chessboard = Board::Board(fen);
                 i += 6;
             }
 
             if (i < args.size() && args[i] == "moves") {
                 i += 1;
                 while (i < args.size()) {
-                    //handle moves
+                    auto move = Move::Move::string_to_move(args[i]);
+                    if (chessboard.has_value() && std::holds_alternative<Board::SuccessfulOperation>(
+                        chessboard.value().is_valid_move(&move)
+                    )) {
+                        chessboard.value().make_move(&move);
+                    } else {
+                        continue;
+                    }
                 }
             }
         }//end else if "position"
@@ -318,7 +328,7 @@ vector<string> split(string input, char delimiter) {
     vector <string> output = {};
 
     size_t start = 0;
-    auto index = (find(input.begin(), input.end(), delimeter));
+    size_t index = input.find(delimiter);
     if (index != -1) {
         output.push_back(input.substr(start, index - start));
         start += index;
