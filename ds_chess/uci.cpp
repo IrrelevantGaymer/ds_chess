@@ -1,13 +1,13 @@
+//
+// Created by river on 5/13/24.
+//
+#include <iostream>
 #include <optional>
 
 #include "uci.h"
 #include "board.h"
+#include "search.h"
 #include "string_handling.h"
-
-const std::string NAME = "ds_chess";
-const std::string AUTHOR = "Justin and Cora";
-//Forsyth Edwards notation for position: pieces, player to move, castling rights, en passant, 50 move rule, total ply
-const std::string STARTPOS = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 
 void UCI::uci_loop() {
     std::optional<Board::Board> board;
@@ -17,55 +17,31 @@ void UCI::uci_loop() {
         getline(std::cin, input);
         std::vector<std::string> args = StringHandling::split(input, ' ');
 
+        if (args.empty()) {
+            continue;
+        }
+
         if (args[0] == "uci") {
             UCI::uci_command();
-        }//end if
-        else if (args[0] == "isready") {
+        } else if (args[0] == "isready") {
             UCI::isready_command();
-        }
-        else if (args[0] == "position") {
-            size_t i = 1;
-            //do position logic
-            // check if 
-            if (args[i] == "startpos") {
-                //set board to startpos
-                i += 1;
-            }
-            else if (args[i] == "fen") {
-                //create a board using args[2]
-                std::string fen = args[2] + " " + args[3] + " " + args[4] + " " + args[5] + " " + args[6] + " " + args[7];
-                board = Board::Board(fen);
-                i += 6;
-            }
-
-            if (i < args.size() && args[i] == "moves") {
-                i += 1;
-                while (i < args.size()) {
-                    auto move = Move::Move::string_to_move(args[i]);
-                    if (board.has_value() && std::holds_alternative<Board::SuccessfulOperation>(
-                        board.value().is_valid_move(&move)
-                    )) {
-                        board.value().make_move(&move);
-                    } else {
-                        continue;
-                    }
-                }
-            }
-        }//end else if "position"
-
-        else if (args[0] == "go") {
-            //go will run search function using chessboard as an input
-
-        }
-        else if (args[0] == "quit") {
+        } else if (args[0] == "position") {
+            UCI::position_command(args.begin() + 1, args.end(), &board);
+        } else if (args[0] == "go") {
+            UCI::go_command(args.begin() + 1, args.end(), &board);
+        } else if (args[0] == "print") {
+            UCI::print_command(&board);
+        } else if (args[0] == "quit") {
             break;
+        } else {
+            std::cout << "invalid command" << std::endl;
         }
-    } //end while
+    }
 }
 
 void UCI::uci_command() {
     std::cout << "id name " << NAME << "\n";
-    std::cout << "id author" << AUTHOR << std::endl;
+    std::cout << "id author " << AUTHOR << std::endl;
 }
 
 void UCI::isready_command() {
@@ -73,32 +49,67 @@ void UCI::isready_command() {
 }
 
 void UCI::position_command(
-    std::vector<std::string>::iterator begin, 
-    std::vector<std::string>::iterator end, 
-    Board::Board *board
+    std::vector<std::string>::iterator begin,
+    std::vector<std::string>::iterator end,
+    std::optional<Board::Board> *board
 ) {
     auto index = begin;
-    
+
     if (*index == "startpos") {
+        *board = Board::Board(STARTPOS);
         index += 1;
     } else if (*index == "fen") {
-        //create a board using args[2]
         std::string fen = index[1] + " " + index[2] + " " + index[3] + " " + index[4] + " " + index[5] + " " + index[6];
         *board = Board::Board(fen);
         index += 6;
+    } else {
+        return;
     }
 
-    if (index <= end && *index == "moves") {
-        index += 1;
-        while (index <= end) {
-            auto move = Move::Move::string_to_move(*index);
-            if (std::holds_alternative<Board::SuccessfulOperation>(
-                board->is_valid_move(&move)
-            )) {
-                board->make_move(&move);
-            } else {
-                continue;
-            }
+    if (index >= end || *index != "moves") {
+        return;
+    }
+
+    index += 1;
+    while (index < end) {
+        auto move = Move::Move::string_to_move(*index);
+        if (board->has_value() && std::holds_alternative<Board::SuccessfulOperation>(
+            board->value().is_valid_move(&move)
+        )) {
+            board->value().make_move(&move);
+        } else {
+            std::cout << "invalid move " << move.to_string() << std::endl;
+            auto e = std::get<Board::MoveError>(board->value().is_valid_move(&move));
+            std::cout << e << std::endl;
+            return;
         }
+        index += 1;
+    }
+}
+
+void UCI::go_command(
+    std::vector<std::string>::iterator begin,
+    std::vector<std::string>::iterator end,
+    std::optional<Board::Board> *board
+) {
+    auto index = begin;
+
+    int32_t depth = 4;
+
+    while (index < end) {
+        if (*index == "depth") {
+            index += 1;
+            depth = atoi(index->c_str());
+        } //check for other go paramters
+        index += 1;
+    }
+    Search::init_search(depth, &board->value());
+}
+
+void UCI::print_command(std::optional<Board::Board> *board) {
+    if (board->has_value()) {
+        board->value().print_board();
+    } else {
+        std::cout << "no board stored" << std::endl;
     }
 }

@@ -1,11 +1,13 @@
+//
+// Created by river on 5/13/24.
+//
+
 #ifndef BOARD_H
 #define BOARD_H
 
 #include <array>
-#include <iostream>
 #include <optional>
 #include <string>
-#include <tuple>
 #include <variant>
 
 #include "move.h"
@@ -18,18 +20,6 @@ namespace Board {
     const Move::Index DEFAULT_BLACK_KING_INDEX = 60;
     const Move::Index DEFAULT_BLACK_KINGSIDE_ROOK_INDEX = 63;
     
-    struct SuccessfulOperation {};
-
-    enum MoveError {
-        NoPieceToMove,
-        InvalidMove,
-        IndexOutOfBounds,
-        KingLeftInCheck,
-        NoKing
-    };
-
-    typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
-
     class Board {
     public:
         std::array<std::optional<Move::Piece>, 64> board;

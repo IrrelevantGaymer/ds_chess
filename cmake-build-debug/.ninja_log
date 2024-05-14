@@ -1,0 +1,10 @@
+# ninja log v5
+3	1031	1715660907662930863	CMakeFiles/ds_chess.dir/ds_chess/move.cpp.o	3b5e0ee092c1327d
+3	871	1715660907506930859	CMakeFiles/ds_chess.dir/ds_chess/uci.cpp.o	5a72e1353967da6e
+0	18	1715679362424045233	build.ninja	841814ea6f354d7
+3	524	1715660907158930849	CMakeFiles/ds_chess.dir/ds_chess/string_handling.cpp.o	4d9c7f4b87113038
+2	933	1715660907566930860	CMakeFiles/ds_chess.dir/ds_chess/board.cpp.o	b81fbf70d66824db
+2	1156	1715660907790930867	CMakeFiles/ds_chess.dir/ds_chess/evaluation.cpp.o	3dce3d7b6cebb3db
+3	866	1715660907498930858	CMakeFiles/ds_chess.dir/ds_chess/search.cpp.o	36f91927c889d59
+2	1056	1715660907690930864	CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o	a8663bcb86d4179e
+3	1072	1715660907706930864	CMakeFiles/ds_chess.dir/ds_chess/move_generator.cpp.o	2aed229b5a2bc121

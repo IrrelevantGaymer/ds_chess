@@ -51,8 +51,49 @@ build cmake_object_order_depends_target_ds_chess: phony || .
 
 build CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/main.cpp || cmake_object_order_depends_target_ds_chess
   DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o.d
-  FLAGS = -g
-  INCLUDES = -I/home/river/Desktop/Projects/chess_ds/include
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/evaluation.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/evaluation.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/evaluation.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/board.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/board.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/board.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/move.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/move.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/move.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/move_generator.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/move_generator.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/move_generator.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/search.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/search.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/search.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/string_handling.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/string_handling.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/string_handling.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/ds_chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
+
+build CMakeFiles/ds_chess.dir/ds_chess/uci.cpp.o: CXX_COMPILER__ds_chess_unscanned_Debug /home/river/Desktop/Projects/chess_ds/ds_chess/uci.cpp || cmake_object_order_depends_target_ds_chess
+  DEP_FILE = CMakeFiles/ds_chess.dir/ds_chess/uci.cpp.o.d
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/ds_chess.dir
   OBJECT_FILE_DIR = CMakeFiles/ds_chess.dir/ds_chess
 
@@ -64,38 +105,13 @@ build CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o: CXX_COMPILER__ds_chess_unscan
 #############################################
 # Link the executable ds_chess
 
-build ds_chess: CXX_EXECUTABLE_LINKER__ds_chess_Debug CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o
+build ds_chess: CXX_EXECUTABLE_LINKER__ds_chess_Debug CMakeFiles/ds_chess.dir/ds_chess/main.cpp.o CMakeFiles/ds_chess.dir/ds_chess/evaluation.cpp.o CMakeFiles/ds_chess.dir/ds_chess/board.cpp.o CMakeFiles/ds_chess.dir/ds_chess/move.cpp.o CMakeFiles/ds_chess.dir/ds_chess/move_generator.cpp.o CMakeFiles/ds_chess.dir/ds_chess/search.cpp.o CMakeFiles/ds_chess.dir/ds_chess/string_handling.cpp.o CMakeFiles/ds_chess.dir/ds_chess/uci.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lSMFL
   OBJECT_DIR = CMakeFiles/ds_chess.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = ds_chess
   TARGET_PDB = ds_chess.dbg
-
-
-#############################################
-# Utility command for package
-
-build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/river/Desktop/Projects/chess_ds/build && /home/river/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build package: phony CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/river/Desktop/Projects/chess_ds/build && /home/river/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/river/Desktop/Projects/chess_ds/build/CPackSourceConfig.cmake
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build package_source: phony CMakeFiles/package_source.util
 
 
 #############################################
