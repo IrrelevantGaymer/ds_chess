@@ -4,6 +4,7 @@
 #include <limits>
 #include <vector>
 #include <string>
+#include <optional>
 #include "move_generator.h"
 
 using namespace MoveGenerator;

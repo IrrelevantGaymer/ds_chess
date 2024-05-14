@@ -1,0 +1,658 @@
+﻿  board.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,58): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,65): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,64): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,71): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(24,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(24,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(27,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(27,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(31,89): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(31,89): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(34,89): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(34,89): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(38,89): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(38,89): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(41,89): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(41,89): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(45,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(45,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(48,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(48,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(52,88): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(52,88): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(55,88): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(55,88): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(59,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(59,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(62,87): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(62,87): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(160,12): error C2374: 'len': redefinition; multiple initialization
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(144): message : see declaration of 'len'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(177,43): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(184,43): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(193,49): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(193,49): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(190,20): error C2672: 'std::find': no matching overloaded function found
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(194,5): error C2780: '_FwdIt std::find(_ExPo &&,_FwdIt,const _FwdIt,const _Ty &) noexcept': expects 4 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5233): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(194,5): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5225): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(195,8): error C3536: 'it': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(195,32): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'std::_Array_const_iterator<_Ty,64>' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=std::optional<Move::Piece>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array(238,34): message : could be 'bool std::_Array_const_iterator<_Ty,64>::operator ==(const std::_Array_const_iterator<_Ty,64> &) noexcept const' [synthesized expression '!(y == x)']
+          with
+          [
+              _Ty=std::optional<Move::Piece>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\variant(1701,27): message : or 'bool std::operator ==(std::monostate,std::monostate) noexcept' [rewritten expression '!(x == y)']
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\variant(1701,27): message : or 'bool std::operator ==(std::monostate,std::monostate) noexcept' [synthesized expression '!(y == x)']
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(195,32): message : while trying to match the argument list '(int, std::_Array_const_iterator<_Ty,64>)'
+          with
+          [
+              _Ty=std::optional<Move::Piece>
+          ]
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(196,48): error C2672: 'std::distance': no matching overloaded function found
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(196,80): error C2782: 'conditional_t<std::_Is_from_primary<std::iterator_traits<remove_cv<remove_reference<_Ty>::type>::type>>,std::incrementable_traits<remove_cv<remove_reference<_Ty>::type>::type>,std::iterator_traits<remove_cv<remove_reference<_Ty>::type>::type>>::difference_type std::distance(_InIt,_InIt)': template parameter '_InIt' is ambiguous
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1523): message : see declaration of 'std::distance'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(196,80): message : could be 'int'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(196,80): message : or       'std::_Array_const_iterator<_Ty,64>'
+          with
+          [
+              _Ty=std::optional<Move::Piece>
+          ]
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(196,80): error C2784: 'conditional_t<std::_Is_from_primary<std::iterator_traits<remove_cv<remove_reference<_Ty>::type>::type>>,std::incrementable_traits<remove_cv<remove_reference<_Ty>::type>::type>,std::iterator_traits<remove_cv<remove_reference<_Ty>::type>::type>>::difference_type std::distance(_InIt,_InIt)': could not deduce template argument for '_InIt' from 'int'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1523): message : see declaration of 'std::distance'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(246,73): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(246,78): error C2660: 'Move::Piece::generate_legal_moves': function does not take 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,35): message : see declaration of 'Move::Piece::generate_legal_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(248,8): error C3536: 'possible_moves': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(248,14): error C2672: 'std::find': no matching overloaded function found
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(248,8): error C2780: '_FwdIt std::find(_ExPo &&,_FwdIt,const _FwdIt,const _Ty &) noexcept': expects 4 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5233): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(248,8): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5225): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(250,22): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(260,50): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(261,8): error C3536: 'king_index': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(264,79): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(264,84): error C2660: 'Move::Piece::generate_capture_moves': function does not take 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,35): message : see declaration of 'Move::Piece::generate_capture_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(265,8): error C3536: 'potential_captures': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(265,14): error C2672: 'std::find': no matching overloaded function found
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(265,8): error C2780: '_FwdIt std::find(_ExPo &&,_FwdIt,const _FwdIt,const _Ty &) noexcept': expects 4 arguments - 1 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5233): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(265,8): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 1 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(5225): message : see declaration of 'std::find'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(279,40): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(289,51): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(292,22): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(293,15): error C2039: 'lost_castling_rights': is not a member of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13): message : see declaration of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(294,62): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(295,63): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(293,44): error C2660: 'Move::get_castling_rights': function does not take 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(78,20): message : see declaration of 'Move::get_castling_rights'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(298,26): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(305,29): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(306,26): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(309,23): error C2039: 'lost_castling_rights': is not a member of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13): message : see declaration of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(312,23): error C2039: 'lost_castling_rights': is not a member of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13): message : see declaration of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(317,23): error C2039: 'lost_castling_rights': is not a member of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13): message : see declaration of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(320,23): error C2039: 'lost_castling_rights': is not a member of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13): message : see declaration of 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.cpp(320,44): fatal error C1003: error count exceeds 100; stopping compilation
+  evaluation.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,58): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,65): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,64): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,71): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(14,22): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(17,16): error C3861: 'get_piece_value': identifier not found
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(22,9): error C2678: binary '|': no operator found which takes a left-hand operand of type 'std::ranges::transform_view<std::ranges::filter_view<std::ranges::ref_view<std::array<std::optional<Move::Piece>,64>>,evaluate_board::<lambda_1>>,evaluate_board::<lambda_2>>' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef(42,27): message : could be 'std::byte std::operator |(const std::byte,const std::byte) noexcept' [found using argument-dependent lookup]
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(24,9): message : while trying to match the argument list '(std::ranges::transform_view<std::ranges::filter_view<std::ranges::ref_view<std::array<std::optional<Move::Piece>,64>>,evaluate_board::<lambda_1>>,evaluate_board::<lambda_2>>, std::ranges::_Range_closure<std::ranges::views::_Filter_fn,evaluate_board::<lambda_3>>)'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(26,46): error C3536: 'evaluatable_pieces': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(26,17): error C2672: 'std::accumulate': no matching overloaded function found
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(26,83): error C2780: '_Ty std::accumulate(const _InIt,const _InIt,_Ty)': expects 3 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\numeric(41): message : see declaration of 'std::accumulate'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(26,83): error C2780: '_Ty std::accumulate(const _InIt,const _InIt,_Ty,_Fn)': expects 4 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\numeric(25): message : see declaration of 'std::accumulate'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(43,19): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(48,20): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(51,20): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\19512\source\repos\ds_chess\ds_chess\evaluation.cpp(66,28): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+  main.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\main.cpp(6,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  move.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_WHITE_QUEENSIDE_ROOK_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14,60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(15,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(15,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(15,17): error C2086: 'const int Board::Index': redefinition
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(15,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_WHITE_KINGSIDE_ROOK_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(15,59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(16,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(16,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(16,17): error C2086: 'const int Board::Index': redefinition
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(16,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_WHITE_KING_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(16,50): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(17,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(17,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(17,17): error C2086: 'const int Board::Index': redefinition
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(17,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_BLACK_QUEENSIDE_ROOK_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(17,60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(18,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(18,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(18,17): error C2086: 'const int Board::Index': redefinition
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(18,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_BLACK_KING_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(18,50): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(19,11): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(19,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(19,17): error C2086: 'const int Board::Index': redefinition
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(19,23): error C2146: syntax error: missing ';' before identifier 'DEFAULT_BLACK_KINGSIDE_ROOK_INDEX'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(19,59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(35,34): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(35,40): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(35,25): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(35): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(35,25): error C3203: 'optional': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(36,9): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(36,21): error C3646: 'current_player': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(36,35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(45,32): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(45,38): error C2061: syntax error: identifier 'Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(47,34): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(47,40): error C2061: syntax error: identifier 'Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(49,39): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(49,45): error C2061: syntax error: identifier 'Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(51,23): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(51,14): error C2923: 'std::optional': 'Board::Index' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(14): message : see declaration of 'Board::Index'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(51,51): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(51,57): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(51,75): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(53,45): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(53,51): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(54,44): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(54,50): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,16): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,28): error C3646: 'get_default_queenside_rook_for_color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,65): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,71): error C2065: 'Color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,77): error C2146: syntax error: missing ')' before identifier 'color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(55,83): error C2238: unexpected token(s) preceding ';'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,16): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,28): error C3646: 'get_default_king_for_color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,55): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,61): error C2065: 'Color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,67): error C2146: syntax error: missing ')' before identifier 'color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(56,73): error C2238: unexpected token(s) preceding ';'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,16): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,28): error C3646: 'get_default_kingside_rook_for_color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,64): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,70): error C2065: 'Color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,76): error C2146: syntax error: missing ')' before identifier 'color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(57,82): error C2238: unexpected token(s) preceding ';'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(60,34): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(60,40): error C2061: syntax error: identifier 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(61,24): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(61,30): error C2061: syntax error: identifier 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(62,26): error C2653: 'Move': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\board.h(62,32): error C2061: syntax error: identifier 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(8,17): error C2872: 'Move': ambiguous symbol
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(10,11): message : could be 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13,11): message : or       'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(9,21): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(17,19): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(19,30): error C3536: 'fn': cannot be used before it is initialized
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(19,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(19,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(19,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(21,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(21,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(21,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(23,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(23,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(23,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(25,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(25,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(25,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(27,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(27,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(27,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(29,28): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(29,38): error C2440: '<function-style-cast>': cannot convert from 'int' to 'std::string'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(29,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(33,11): error C2872: 'Move': ambiguous symbol
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(10,11): message : could be 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13,11): message : or       'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(38,32): error C2872: 'Move': ambiguous symbol
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(10,11): message : could be 'Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(13,11): message : or       'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(42,11): error C2872: 'Move': ambiguous symbol
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.cpp(42,11): fatal error C1003: error count exceeds 100; stopping compilation
+  move_generator.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,58): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,65): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,64): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,71): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(14,34): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(15,87): error C2660: 'Move::Piece::generate_legal_moves': function does not take 2 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,35): message : see declaration of 'Move::Piece::generate_legal_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(15,42): error C2143: syntax error: missing ';' before ':'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(15,9): error C2660: 'Move::Piece::generate_legal_moves': function does not take 2 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,35): message : see declaration of 'Move::Piece::generate_legal_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(15,87): error C2143: syntax error: missing ';' before ')'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(16,23): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(17,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(17,126): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(17,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(17,127): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(17,127): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(18,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(18,126): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(18,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(18,127): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(18,127): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(19,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(19,124): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(19,124): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(19,125): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(19,125): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(20,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(20,125): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(20,125): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(20,126): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(20,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(44,34): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(45,89): error C2660: 'Move::Piece::generate_capture_moves': function does not take 2 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,35): message : see declaration of 'Move::Piece::generate_capture_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(45,42): error C2143: syntax error: missing ';' before ':'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(45,9): error C2660: 'Move::Piece::generate_capture_moves': function does not take 2 arguments
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,35): message : see declaration of 'Move::Piece::generate_capture_moves'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(45,89): error C2143: syntax error: missing ';' before ')'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(46,23): error C2039: 'piece_type': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(47,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(47,126): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(47,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(47,127): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(47,127): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(48,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(48,126): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(48,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(48,127): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(48,127): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(49,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(49,124): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(49,124): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(49,125): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(49,125): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(50,96): error C2039: 'color': is not a member of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(39): message : see declaration of 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(50,125): error C2440: '<function-style-cast>': cannot convert from 'Move::PieceType' to 'Move::Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(50,125): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(50,126): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'Move::Move'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move_generator.cpp(50,126): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+  search.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,58): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,65): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,64): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,71): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+  uci.cpp
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(17,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,23): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,14): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,24): error C3646: 'lost_castling_rights': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(19,44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,50): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,41): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,80): error C2065: 'Piece': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,71): error C2923: 'std::optional': 'Piece' is not a valid template type argument for parameter '_Ty'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21): message : see declaration of 'Piece'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,57): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(21,87): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\optional(155): message : see declaration of 'std::optional'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,15): error C3646: 'color': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(41,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,19): error C3646: 'piece_type': unknown override specifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(42,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,15): error C2061: syntax error: identifier 'Color'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(46,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,58): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(47,65): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(49,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(50,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(51,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(52,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,57): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(53,64): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,65): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(54,72): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(55,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(56,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,56): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(57,63): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,64): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(58,71): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,55): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(59,62): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,63): error C2653: 'Board': is not a class or namespace name
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(60,70): error C2061: syntax error: identifier 'Board'
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,58): error C2065: 'color': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,77): error C2065: 'piece_type': undeclared identifier
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,52): error C2614: 'Move::Piece': illegal member initialization: 'color' is not a base or member
+C:\Users\19512\source\repos\ds_chess\ds_chess\move.h(44,66): error C2614: 'Move::Piece': illegal member initialization: 'piece_type' is not a base or member
+  Generating Code...

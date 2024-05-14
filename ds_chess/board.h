@@ -18,6 +18,18 @@ namespace Board {
     const Move::Index DEFAULT_BLACK_KING_INDEX = 60;
     const Move::Index DEFAULT_BLACK_KINGSIDE_ROOK_INDEX = 63;
     
+    struct SuccessfulOperation {};
+
+    enum MoveError {
+        NoPieceToMove,
+        InvalidMove,
+        IndexOutOfBounds,
+        KingLeftInCheck,
+        NoKing
+    };
+
+    typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
+
     class Board {
     public:
         std::array<std::optional<Move::Piece>, 64> board;
@@ -28,7 +40,7 @@ namespace Board {
         size_t moves_since_last_pawn_move_or_capture;
         size_t num_moves;
 
-        Board::Board (std::string fen);
+        Board (std::string fen);
         //returns true if a piece exists at the index
         bool is_piece_at_index(Move::Index index) const;
         //returns true if a piece exists at the index and if the piece is the opposite color to capturing_color
@@ -50,18 +62,6 @@ namespace Board {
         void unmake_move(Move::Move *move);
         void print_board() const;
     };
-
-    struct SuccessfulOperation {};
-
-    enum MoveError {
-        NoPieceToMove,
-        InvalidMove,
-        IndexOutOfBounds,
-        KingLeftInCheck,
-        NoKing
-    };
-
-    typedef std::variant<SuccessfulOperation, MoveError> MoveResult;
 };
 
 #endif

@@ -193,7 +193,7 @@ std::optional<Move::Index> Board::Board::get_king_index(Move::Color color) const
         Move::Piece(color, Move::PieceType::King)
     );
     if (it != this->board.end()) {
-        return std::optional(std::distance(this->board.begin(), it));
+        return std::optional<Move::Index>(std::distance(this->board.begin(), it));
     }
     return std::nullopt;
 }
