@@ -1,8 +1,12 @@
-#include <ranges>
+//
+// Created by river on 5/13/24.
+//
 
 #include "move_generator.h"
 
-std::vector<Move::Move> generate_moves(Board::Board *board) {
+#include <ranges>
+
+std::vector<Move::Move> MoveGenerator::generate_moves(Board::Board *board) {
     std::vector<Move::Move> moves = {};
 
     for (Move::Index i = 0; i < std::size(board->board); i++) {
@@ -32,7 +36,7 @@ std::vector<Move::Move> generate_moves(Board::Board *board) {
     return moves;
 }
 
-std::vector<Move::Move> generate_capture_moves(Board::Board *board) {
+std::vector<Move::Move> MoveGenerator::generate_capture_moves(Board::Board *board) {
     std::vector<Move::Move> moves = {};
 
     for (Move::Index i = 0; i < std::size(board->board); i++) {

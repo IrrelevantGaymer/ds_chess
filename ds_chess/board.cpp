@@ -1,81 +1,92 @@
-#include <optional>
+//
+// Created by river on 5/13/24.
+//
 
 #include "board.h"
+
+#include <iostream>
+#include <optional>
+
+#include <algorithm>
+
 #include "move.h"
 
-Board::Board::Board (std::string fen) : 
-    board(std::array<std::optional<Move::Piece>, 64>()), 
-    current_player(Move::Color::White), 
+Board::Board::Board (std::string fen) :
+    board(std::array<std::optional<Move::Piece>, 64>()),
+    current_player(Move::Color::White),
     can_white_kingside_castle(false),
     can_white_queenside_castle(false),
     can_black_kingside_castle(false),
     can_black_queenside_castle(false),
-    en_passant(std::nullopt), 
+    en_passant(std::nullopt),
     moves_since_last_pawn_move_or_capture(0),
     num_moves(0)
 {
     //handle pieces on the board
-    Move::Index index = 0;
+    Move::Index index = 63;
 
     size_t i = 0;
     while (index < 64) {
         switch (fen[i]) {
         case 'P':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::Pawn);
-            index += 1;
+            index -= 1;
+            break;
         case 'p':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::Pawn);
-            index += 1;
+            index -= 1;
             break;
         case 'N':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::Knight);
-            index += 1;
+            index -= 1;
+            break;
         case 'n':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::Knight);
-            index += 1;
+            index -= 1;
             break;
         case 'B':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::Bishop);
-            index += 1;
+            index -= 1;
+            break;
         case 'b':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::Bishop);
-            index += 1;
+            index -= 1;
             break;
         case 'R':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::Rook);
-            index += 1;
+            index -= 1;
+            break;
         case 'r':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::Rook);
-            index += 1;
+            index -= 1;
             break;
         case 'Q':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::Queen);
-            index += 1;
+            index -= 1;
+            break;
         case 'q':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::Queen);
-            index += 1;
+            index -= 1;
             break;
         case 'K':
             this->board[index] = Move::Piece(Move::Color::White, Move::PieceType::King);
-            index += 1;
+            index -= 1;
+            break;
         case 'k':
             this->board[index] = Move::Piece(Move::Color::Black, Move::PieceType::King);
-            index += 1;
+            index -= 1;
+            break;
+        case '/':
             break;
         default:
             if (isdigit(fen[i])) {
                 if (fen[i] >= '1' && fen[i] <= '8') {
-                    index += fen[i] - '1' + 1;
+                    index -= fen[i] - '0';
                     i++;
                     continue;
                 }
-                throw std::invalid_argument("Unexpected number in fen string");
-            } else if(fen[i] == '/') {
-                i++;
-                continue;
-            } else {
-                throw std::invalid_argument("Unexpected value in fen string");
             }
+            throw std::invalid_argument("Unexpected value in fen string: " + std::to_string(fen[i]) + " at " + std::to_string(i));
         }
         i++;
     }
@@ -94,7 +105,7 @@ Board::Board::Board (std::string fen) :
         i++;
         break;
     default:
-        throw std::invalid_argument("Unexpected value in fen string");
+        throw std::invalid_argument("Unexpected value in fen string: " + std::to_string(i) + " " + fen[i] + " " + fen[i - 1] + "\\");
     }
 
     //acount for space
@@ -105,15 +116,19 @@ Board::Board::Board (std::string fen) :
         switch (fen[i]) {
         case 'K':
             this->can_white_kingside_castle = true;
+            i++;
             break;
         case 'Q':
             this->can_white_queenside_castle = true;
+            i++;
             break;
         case 'k':
             this->can_black_kingside_castle = true;
+            i++;
             break;
         case 'q':
             this->can_black_queenside_castle = true;
+            i++;
             break;
         case '-':
             i++;
@@ -157,7 +172,7 @@ Board::Board::Board (std::string fen) :
     i++;
 
     //handle moves since last pawn move or capture
-    size_t len = 0;
+    len = 0;
     while (true) {
         if (i + len >= fen.length() || fen[i + len] == ' ') {
             this->num_moves = atoi(fen.substr(i, len).c_str());
@@ -187,10 +202,10 @@ bool Board::Board::can_piece_move_to_square(Move::Index index, Move::Color captu
 }
 
 std::optional<Move::Index> Board::Board::get_king_index(Move::Color color) const {
-    auto it = std::find(
-        this->board.begin(), 
-        this->board.end(), 
-        Move::Piece(color, Move::PieceType::King)
+    auto it = std::find_if(
+        this->board.begin(),
+        this->board.end(),
+        [color](auto e) {return e.has_value() && e.value() == Move::Piece(color, Move::PieceType::King);}
     );
     if (it != this->board.end()) {
         return std::optional(std::distance(this->board.begin(), it));
@@ -243,14 +258,14 @@ Board::MoveResult Board::Board::is_valid_move(Move::Move *move) {
     }
 
     Move::Piece piece = this->board[move->from].value();
-    auto possible_moves = Move::Piece::generate_legal_moves(this, piece.color);
+    auto possible_moves = Move::Piece::generate_legal_moves(this, move->from);
 
     if (std::find(possible_moves.begin(), possible_moves.end(), move->to) == possible_moves.end()) {
         return MoveResult(MoveError::InvalidMove);
     } else if (piece.color != this->current_player) {
         return MoveResult(MoveError::InvalidMove);
     }
-    
+
     move->capture = this->board[move->to];
     this->board[move->to] = this->board[move->from];
     this->board[move->from] = std::nullopt;
@@ -266,8 +281,8 @@ Board::MoveResult Board::Board::is_valid_move(Move::Move *move) {
         return MoveResult(MoveError::KingLeftInCheck);
     }
 
-    this->board[move->to] = move->capture;
     this->board[move->from] = this->board[move->to];
+    this->board[move->to] = move->capture;
     Move::swap_ptr(&this->current_player);
 
     return MoveResult(SuccessfulOperation {});
@@ -286,12 +301,12 @@ void Board::Board::make_move(Move::Move *move) {
     move->capture = this->board[move->to];
 
     //handle castling rights
-    Move::Index default_king_space = moving_piece.color == Move::Color::White ? 
-        DEFAULT_WHITE_KING_INDEX 
+    Move::Index default_king_space = moving_piece.color == Move::Color::White ?
+        DEFAULT_WHITE_KING_INDEX
         : DEFAULT_BLACK_KING_INDEX;
     if (moving_piece.piece_type == Move::PieceType::King && default_king_space == move->from) {
         move->lost_castling_rights = Move::get_castling_rights(
-            this->get_kingside_castle_for_color(moving_piece.color), 
+            this->get_kingside_castle_for_color(moving_piece.color),
             this->get_queenside_castle_for_color(moving_piece.color)
         );
 
@@ -368,10 +383,10 @@ void Board::Board::make_move(Move::Move *move) {
 }
 
 void Board::Board::unmake_move(Move::Move *move) {
-    Move::Piece moving_piece = this->board[move->from].value();
-    
-    this->board[move->to] = move->capture;
+    Move::Piece moving_piece = this->board[move->to].value();
+
     this->board[move->from] = this->board[move->to];
+    this->board[move->to] = move->capture;
     this->current_player = Move::swap(this->current_player);
 
     //handling undoing castling
@@ -412,9 +427,9 @@ void Board::Board::unmake_move(Move::Move *move) {
 }
 
 void Board::Board::print_board() const {
-    for (size_t rank = 7; rank >= 0; rank--) {
-        std::cout << rank + 1 << " ";    
-        for (size_t file = 0; file < 8; file++) {
+    for (int32_t rank = 7; rank >= 0; rank--) {
+        std::cout << rank + 1 << " ";
+        for (int32_t file = 0; file < 8; file++) {
             Move::Index index = Move::Move::coord_to_index(rank, file);
             std::optional<Move::Piece> piece = this->board[index];
 
@@ -424,7 +439,7 @@ void Board::Board::print_board() const {
                 std::cout << "- ";
             }
         }
-        std::cout << "\n";
+        std::cout << std::endl;
     }
     std::cout << "  a b c d e f g h " << std::endl;
 }

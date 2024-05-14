@@ -1,11 +1,21 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.28)
 project(ds_chess)
 
-# Our Project
-set(SOURCE_FILES ds_chess/main.cpp)
+set(CMAKE_CXX_STANDARD 20)
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-
-link_directories(ds_chess lib)
-target_include_directories(ds_chess PUBLIC include)
-target_link_libraries(ds_chess SMFL)
+add_executable(ds_chess ds_chess/main.cpp
+        ds_chess/evaluation.cpp
+        ds_chess/evaluation.h
+        ds_chess/board.cpp
+        ds_chess/board.h
+        ds_chess/move.cpp
+        ds_chess/move.h
+        ds_chess/move_generator.cpp
+        ds_chess/move_generator.h
+        ds_chess/search.cpp
+        ds_chess/search.h
+        ds_chess/string_handling.cpp
+        ds_chess/string_handling.h
+        ds_chess/uci.cpp
+        ds_chess/uci.h
+)
